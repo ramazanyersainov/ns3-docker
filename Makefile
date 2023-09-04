@@ -1,5 +1,5 @@
 NAME ?= ns3
-NS3_DOCKER_TAG ?= 3.0
+NS3_DOCKER_TAG ?= 3.33
 
 all: build start
 

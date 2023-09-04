@@ -51,13 +51,13 @@ RUN apt-get update && \
 RUN mkdir -p /usr/ns3
 WORKDIR /usr 
 
-RUN wget https://www.nsnam.org/release/ns-allinone-3.30.tar.bz2  && \
-    tar -jxvf ns-allinone-3.30.tar.bz2
+RUN wget https://www.nsnam.org/release/ns-allinone-3.33.tar.bz2  && \
+    tar -jxvf ns-allinone-3.33.tar.bz2
 
-RUN cd ns-allinone-3.30 && ./build.py --enable-examples --enable-tests
+RUN cd ns-allinone-3.33 && ./build.py --enable-examples --enable-tests
 
-RUN ln -s /usr/ns-allinone-3.30/ns-3.30/ /usr/ns3/
+RUN ln -s /usr/ns-allinone-3.33/ns-3.33/ /usr/ns3/
 
 RUN apt-get clean && \
     rm -rf /var/lib/apt && \
-    rm ns-allinone-3.30.tar.bz2
+    rm ns-allinone-3.33.tar.bz2

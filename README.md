@@ -1,7 +1,7 @@
 # NS-3 Docker Image
-https://www.nsnam.org/releases/ns-3-30/
+https://www.nsnam.org/releases/ns-3-33/
 
-Docker recipe for building and starting an ns-3.30 image
+Docker recipe for building and starting an ns-3.33 image
 
 ## Building the image
 You can build the docker image by running:
@@ -17,7 +17,7 @@ make start
 ## Testing the image
 To make sure that it works, in the container run:
 
-1. ``` cd ns-allinone-3.30/ns-3.30/ ```
+1. ``` cd ns-allinone-3.33/ns-3.33/ ```
 2. ``` cp examples/tutorial/second.cc scratch/ ```
 3. ``` ./waf --run scratch/second   ```
 
